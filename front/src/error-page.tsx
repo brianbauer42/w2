@@ -15,7 +15,7 @@ export default function ErrorPage() {
           </p>
         )}
       </div>
-    )
+    );
   } else if (error instanceof Error) {
     <div id="error-page">
       <h1>Oops! Unexpected Error</h1>
@@ -28,5 +28,5 @@ export default function ErrorPage() {
     return <></>;
   }
 
-    return <p>{error.message || "Unknown Error"}</p>
+  return <p>{error.message || "Unknown Error"}</p>;
 }
